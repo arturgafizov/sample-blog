@@ -36,12 +36,12 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'capybara', '>= 2.15'
+  #gem 'capybara', '>= 2.15'
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+#  gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
@@ -53,6 +53,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 group :test, :development do
-	gem "rspec-rails", "2.9.0"
+	gem "rspec-rails"#, '~> 3.6'
+    gem 'capybara'#, '>= 2.15'
+	gem "shoulda-matchers"#, '~> 3.1', '>= 3.1.1'
 #	gem 'capybara'
 end	
