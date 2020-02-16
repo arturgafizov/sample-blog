@@ -57,4 +57,5 @@ group :test, :development do
     gem 'capybara'#, '>= 2.15'
 	gem "shoulda-matchers"#, '~> 3.1', '>= 3.1.1'
     gem "factory_bot_rails"
+    gem 'database_cleaner-active_record'
 end	

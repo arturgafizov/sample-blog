@@ -2,6 +2,7 @@
 require 'spec_helper'
 require 'rails_helper'
 require 'support/session_helper'
+require 'support/database_cleaner'
 #require 'capybara/rspec'
 #require 'support/factory_girl'
 ENV['RAILS_ENV'] ||= 'test'
